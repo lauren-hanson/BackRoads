@@ -1,8 +1,7 @@
-import './BackRoads.css';
 
 function BackRoads() {
   return (
-   <h2>BackRoads App</h2>
+    <h1>BackRoads App</h1>
   )
 }
 
