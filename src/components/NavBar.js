@@ -12,6 +12,7 @@ export const NavBar = () => {
                         <i className="fas fa-bars"></i>
                     </button>
                 </div>
+
                 <ul className="nav-links" id="nav-links">
                     {pageLinks.map((link) => {
                         return (
