@@ -1,5 +1,5 @@
 import logo from "../images/logo.svg"
-import { pageLinks } from "./data.js"
+import { pageLinks, socialLinks } from "./data.js"
 
 export const NavBar = () => {
 
@@ -39,7 +39,18 @@ export const NavBar = () => {
                 </ul>
 
                 <ul className="nav-icons">
-                    <li>
+                    {socialLinks.map((link) => {
+                        // const { id, href, icon } = link
+                        return (
+                            <li>
+                                <a href={link.href} target="_blank" className="nav-icon"
+                                ><i className={link.icon}></i></a>
+                            </li>
+                        )
+                    })}
+
+
+                    {/* <li>
                         <a href="https://www.twitter.com" target="_blank" className="nav-icon"
                         ><i className="fab fa-facebook"></i
                         ></a>
@@ -53,7 +64,7 @@ export const NavBar = () => {
                         <a href="https://www.twitter.com" target="_blank" className="nav-icon"
                         ><i className="fab fa-squarespace"></i
                         ></a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </nav>
