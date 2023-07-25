@@ -1,17 +1,21 @@
+import aboutImg from "../images/about.jpeg"
+import { Title } from "./Title"
+
+
 export const About = () => {
 
     return (
         <>
-
             <section className="section" id="about">
                 <div className="section-title">
-                    <h2>about <span>us</span></h2>
+                    <Title title='about' subTitle='us' />
                 </div>
 
                 <div className="section-center about-center">
                     <div className="about-img">
+
                         <img
-                            src="./images/about.jpeg"
+                            src={aboutImg}
                             className="about-photo"
                             alt="awesome beach"
                         />
@@ -28,7 +32,7 @@ export const About = () => {
                             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
                             unde dolor?
                         </p>
-                        <a href="#" className="btn">read more</a>
+                        <a href="#about" className="btn">read more</a>
                     </article>
                 </div>
             </section></>
