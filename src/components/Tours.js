@@ -1,3 +1,5 @@
+import { Title } from "./Title"
+
 export const Tours = () => {
 
     return (
@@ -5,7 +7,8 @@ export const Tours = () => {
 
             <section className="section" id="tours">
                 <div className="section-title">
-                    <h2>featured <span>tours</span></h2>
+                    <Title title='featured' subTitle='tours' />
+                    {/* <h2>featured <span>tours</span></h2> */}
                 </div>
 
                 <div className="section-center featured-center">
