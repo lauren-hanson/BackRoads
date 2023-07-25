@@ -9,12 +9,11 @@ export const About = () => {
             <section className="section" id="about">
                 <div className="section-title">
                     <Title title='about' subTitle='us' />
-                    {/* <h2>about <span>us</span></h2> */}
                 </div>
 
                 <div className="section-center about-center">
                     <div className="about-img">
-                        
+
                         <img
                             src={aboutImg}
                             className="about-photo"
